@@ -4,7 +4,6 @@
   "description": "Webpack Task 0",
   "main": "index.js",
   "dependencies": {
-    "jQuery": "^1.7.4",
     "jquery": "^3.7.1"
   },
   "devDependencies": {
