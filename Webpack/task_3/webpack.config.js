@@ -5,9 +5,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        header: './js/header.js',
-        body: './js/body.js',
-        footer: './js/footer.js',
+        header: './modules/header/header.js',
+        body: './modules/body/body.js',
+        footer: './modules/footer/footer.js',
     },
     output: {
         filename: '[name].bundle.js',
@@ -44,7 +44,7 @@ module.exports = {
     devServer: {
         port: 8564,
         static: {
-            directory: path.join(__dirname, 'public'),
+            directory: path.join(__dirname, './public'),
         },
         open: true,
     },
