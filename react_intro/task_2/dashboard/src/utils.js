@@ -13,3 +13,8 @@ export const getFooterCopy = (isIndex) => {
         return 'Holberton School main dashboard';
     }
 }
+
+// func returns a string
+export const getLatestNotification = () => {
+    return '<strong>Urgent requirement</strong> - complete by EOD';
+}
