@@ -1,7 +1,24 @@
-import $ from 'jquery';
-// import lodash 
-import _ from 'lodash';
-// creating new elements
-document.ready(function() {
-    $('body').append('<p>Simple stuff</p>');
-});
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import Notification from './Notifications/Notifications';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+const notificationsRoot = ReactDOM.createRoot(document.getElementById('root-notifications'));
+notificationsRoot.render(
+  <React.StrictMode>
+    <Notification />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
