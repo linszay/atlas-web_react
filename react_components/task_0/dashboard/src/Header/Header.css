@@ -1,0 +1,24 @@
+ .App-header {
+    background-color: white;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #00003C;
+    font-size: calc(9px + 1vmin);
+    color: #00003C;
+    font-family: Galano Grotesque Alt, sans-serif;
+  }
+  
+  .App-header h1 {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .App-logo {
+    height: 15vmin;
+    pointer-events: none;
+  }
