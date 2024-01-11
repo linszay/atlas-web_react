@@ -1,7 +1,7 @@
 // create notification element
 import React from 'react';
-import './Notifications.css';
-import closeIcon from './close-icon.png';
+import './Notifications';
+import closeIcon from '../close-icon.png';
 import { getLatestNotification } from '../utils/utils';
 
 const Notification = () => {

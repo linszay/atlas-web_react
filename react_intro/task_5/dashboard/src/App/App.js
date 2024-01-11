@@ -1,7 +1,7 @@
 import React from 'react';
-import atlas_logo from './assets/atlas_logo.png';
-import './App.css';
-import { getFullYear, getFooterCopy } from './utils/utils';
+import atlas_logo from '../assets/holberton-logo.png';
+import './App';
+import { getFullYear, getFooterCopy } from '../utils/utils';
 
 function App() {
   return (
