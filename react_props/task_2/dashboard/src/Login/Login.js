@@ -1,6 +1,6 @@
 // Login.js new component
 import React from 'react';
-import './Login'
+import './Login.css'
 
 const Login = () => {
     return (
