@@ -1,0 +1,36 @@
+.menuItem {
+    text-align: right;
+    font-family: Galano Grotesque Alt, sans-serif;
+    color: #00003C;
+    padding: 10px;
+}
+
+.Notifications.show {
+    border: 2px dashed #00003C;
+    padding: 5px;
+    color: #00003C;
+    font-family: Galano Grotesque Alt, sans-serif;
+    display: row;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+
+    > button {
+        > img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    > ul li[data-notification-type="default"] {
+        color: blue;
+    }
+
+    > ul li[data-notification-type="urgent"] {
+        color: red;
+    }
+}
+
+.Notifications.hide {
+    display: none;
+}

@@ -1,0 +1,26 @@
+
+
+#CourseList {
+    padding-left: 30px;
+    padding-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+
+#centerHeader {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #CourseList th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #CourseList td {
+    padding: 8px;
+    text-align: left;
+  }
+  

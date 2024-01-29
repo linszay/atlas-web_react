@@ -1,0 +1,36 @@
+.menuItem {
+    text-align: right;
+    font-family: Galano Grotesque Alt, sans-serif;
+    color: #6d7ec3;
+    padding: 10px;
+    background-color: #fffae6;
+}
+
+.Notifications.show {
+    border: 2px dashed #738ca5;
+    padding: 5px;
+    color: #6d7ec3;
+    font-family: Galano Grotesque Alt, sans-serif;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+
+    > button {
+        > img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    > ul li[data-notification-type="default"] {
+        color: #ACB1D6;
+    }
+
+    > ul li[data-notification-type="urgent"] {
+        color: #8294C4;
+    }
+}
+
+.Notifications.hide {
+    display: none;
+}
