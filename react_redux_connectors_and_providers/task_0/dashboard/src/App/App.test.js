@@ -3,6 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { render, fireEvent } from '@testing-library/react';
 import App from './App';
+import { }
 
 describe('App component', () => {
   it('renders without crashing', () => {

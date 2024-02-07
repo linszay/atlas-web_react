@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Notifications from '../Notifications/Notifications.js';
 import Header from '../Header/Header.js';
 import Login from '../Login/Login.js';
@@ -96,6 +97,12 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    isLoggedIn: state?.uiReducer?.isLoggedIn,
+  };
+};
+
 const styles = StyleSheet.create({
   App: {
     fontFamily: 'Galano Grotesque Alt, sans-serif',
@@ -123,4 +130,4 @@ App.propTypes = {
   listNotifications: PropTypes.array,
 };
 
-export default App;
+export default connect(mapStateToProps)(App);

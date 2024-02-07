@@ -1,28 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './App/App.js';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './App/AppContext.js';
-// import Notification from './Notifications/Notifications';
+import uiReducer from './reducers/uiReducer.js';
+
+const store = createStore(uiReducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppProvider>
-      <App />
-    </AppProvider>
+    <Provider store={store}>
+      <AppProvider>
+        <App />
+      </AppProvider>
+    </Provider>
   </React.StrictMode>,
 );
 
-
-// const notificationsRoot = ReactDOM.createRoot(document.getElementById('root-notifications'));
-// notificationsRoot.render(
-//   <React.StrictMode>
-//     <Notification />
-//   </React.StrictMode>
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
