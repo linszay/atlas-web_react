@@ -2,8 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { render, fireEvent } from '@testing-library/react';
-import App from './App';
-import { }
+import App, { mapStateToProps } from './App';
 
 describe('App component', () => {
   it('renders without crashing', () => {
@@ -54,4 +53,16 @@ describe('App component', () => {
       expect(window.alert).toHaveBeenCalledWith('Logging you out');
     });
   });
+  describe('mapStateToProps', () => {
+    it('should return the right object when passing isUserLoggedIn: true', () => {
+      const state = fromJS({
+        isUserLoggedIn: true,
+      });
+  
+      const expectedProps = {
+        isLoggedIn: true,
+      };
+  
+      expect(mapStateToProps(state)).toEqual(expectedProps);
+    });
 });
